@@ -15,9 +15,10 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 50px;
-    height: 100vh;
-    align-items:center;
+    /* height: 100vh; */
+    /* align-items:center; */
     justify-content:space-evenly;
+    padding: 14.5% 0%;
     position: relative;
 }
 .container>h1{
