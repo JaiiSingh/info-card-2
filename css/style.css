@@ -1,0 +1,108 @@
+
+body{
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg{
+    background-image: linear-gradient(90deg,#FF9B50,#9D44C0);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    height: 100vh;
+    align-items:center;
+    justify-content:space-evenly;
+    position: relative;
+}
+.container>h1{
+position: absolute;
+z-index: 3;
+top: 4%;
+font-family: 'Cedarville Cursive', cursive;
+text-transform: capitalize;
+color: white;
+font-size: 4rem;
+animation: gliter .8s infinite;
+}
+@keyframes gliter{
+   100%{text-shadow: 0 0 1px white;}
+    75%{text-shadow: 0 0 3px white;}
+    50%{text-shadow: 0 0 8px white;}
+    25%{text-shadow: 0 0 12px white;}
+    0%{text-shadow: 0 0 15px white;}
+}
+.card{
+    width: 15rem;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card >img{
+   width: 100%;
+}
+.floating-div{
+    position:absolute;
+    top: 80%;
+}
+.floating-card-body{
+ background-color:#FFA1F5;
+ position: relative;
+ border-top-left-radius: 20px;
+}
+.floating-card-body::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -40%;
+    width: 20%;
+    height: 40%;
+    border-radius: 0px 0px 20px;
+    box-shadow: 0px 25px  #FFA1F5;
+    background-color:transparent;
+}
+.profile{
+    display: flex;
+}
+.profile > img{
+    margin: 3% 5% 3% 10%;
+    width: 15%;
+    border-radius: 50%;
+}
+.title{
+    margin-top: 15%;
+    font-size: 1rem;
+}
+.sub-title{
+    font-size: .7rem;
+    text-align: left;
+    margin-top: 4%;
+}
+.title , .sub-title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+.floating-card-body > p{
+font-size: .81rem;
+text-align: justify;
+padding: 0% 10%;
+padding-bottom: 5%;
+}
+
+.card:hover .floating-div{
+    top: 50%;
+    transition: all .3s ease-in;
+}
+.card:hover{
+box-shadow: 0px 0px 20px black;
+cursor: pointer;
+}
+.card:hover >img{
+    filter: blur(1px);
+    filter: brightness(90%);
+}
