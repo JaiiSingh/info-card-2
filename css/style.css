@@ -100,10 +100,9 @@ padding-bottom: 5%;
     transition: all .3s ease-in;
 }
 .card:hover{
-box-shadow: 0px 0px 20px black;
+box-shadow: 0px 0px 25px black,0 0 20px white;
 cursor: pointer;
 }
 .card:hover >img{
-    filter: blur(1px);
-    filter: brightness(90%);
+    filter: brightness(90%) blur(2px);
 }
